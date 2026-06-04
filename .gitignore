@@ -1,0 +1,79 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Centrilign — .gitignore
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Environment Variables (NEVER commit real secrets) ─────────────────────────
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+.env.development
+
+# ── OS & Editor Artifacts ─────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ── IDE & Editor Config ───────────────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ── Node (if a build tool or local dev server is introduced) ──────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ── Build Output ──────────────────────────────────────────────────────────────
+dist/
+build/
+out/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.output/
+.vercel/
+.netlify/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ── Temporary Files ───────────────────────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+
+# ── Certificates & Keys ───────────────────────────────────────────────────────
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# ── Deployment Configs with Secrets ──────────────────────────────────────────
+# Keep the template; ignore any filled-in versions
+netlify.toml.local
+vercel.json.local
+wrangler.toml.local
